@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const StyledTitle = styled.h1`
   font-size: 1.5em;
@@ -7,9 +7,10 @@ const StyledTitle = styled.h1`
   color: palevioletred;
 `;
 
-
 type HelloType = {
-    person: string;
-}
+  person: string;
+};
 
-export const Title: React.FC<HelloType> = ({person}: HelloType) => <StyledTitle>Hello {person}</StyledTitle>
+export const Title: React.FC<HelloType> = ({ person }: HelloType) => (
+  <StyledTitle>Hello {person}</StyledTitle>
+);
