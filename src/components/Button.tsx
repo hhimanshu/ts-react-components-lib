@@ -75,6 +75,7 @@ export const Button: React.FC<ButtonProps> = ({
   size = 'medium',
   backgroundColor,
   label,
+  ...props
 }) => {
   return (
     <StyledButton
@@ -82,6 +83,7 @@ export const Button: React.FC<ButtonProps> = ({
       size={size}
       style={{ backgroundColor }}
       label={label}
+      {...props}
     >
       {label}
     </StyledButton>
