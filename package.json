@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.0.0-development",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -19,7 +19,8 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "semantic-release": "semantic-release"
   },
   "peerDependencies": {
     "react": ">=16",
@@ -67,10 +68,24 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
+    "semantic-release": "^17.4.2",
     "size-limit": "^4.10.2",
+    "styled-components": "^5.2.3",
     "tsdx": "^0.14.1",
     "tslib": "^2.2.0",
-    "typescript": "^4.2.3",
-    "styled-components": "^5.2.3"
+    "typescript": "^4.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hhimanshu/ts-react-components-lib"
+  },
+  "keywords": [
+    "typescript",
+    "tsdx",
+    "styled-components",
+    "react"
+  ],
+  "release": {
+    "branches": ["master"]
   }
 }
