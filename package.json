@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.0.0-development",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -19,10 +19,12 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "semantic-release": "semantic-release"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16",
+    "styled-components": "^5.2.3"
   },
   "husky": {
     "hooks": {
@@ -56,21 +58,34 @@
     "@storybook/addon-links": "^6.2.3",
     "@storybook/addons": "^6.2.3",
     "@storybook/react": "^6.2.3",
+    "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
+    "@types/styled-components": "^5.1.9",
     "babel-loader": "^8.2.2",
     "husky": "^6.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
+    "semantic-release": "^17.4.2",
     "size-limit": "^4.10.2",
+    "styled-components": "^5.2.3",
     "tsdx": "^0.14.1",
     "tslib": "^2.2.0",
     "typescript": "^4.2.3"
   },
-  "dependencies": {
-    "@types/styled-components": "^5.1.9",
-    "styled-components": "^5.2.3"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hhimanshu/ts-react-components-lib"
+  },
+  "keywords": [
+    "typescript",
+    "tsdx",
+    "styled-components",
+    "react"
+  ],
+  "release": {
+    "branches": ["master"]
   }
 }
