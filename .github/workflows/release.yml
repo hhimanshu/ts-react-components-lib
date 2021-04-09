@@ -4,8 +4,8 @@ on:
     branches:
       - master
 jobs:
-  setup:
-    name: Setup Dependencies
+  release:
+    name: Release
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
@@ -16,18 +16,8 @@ jobs:
           node-version: 12
       - name: Install dependencies
         run: npx yarn install
-  test:
-    name: Run Tests
-    runs-on: ubuntu-18.04
-    needs: setup
-    steps:
       - name: Test
         run: npx yarn test
-  release:
-    name: Release
-    runs-on: ubuntu-18.04
-    needs: test
-    steps:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
