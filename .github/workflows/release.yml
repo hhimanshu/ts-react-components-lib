@@ -22,7 +22,7 @@ jobs:
     needs: setup
     steps:
       - name: Test
-      - run: npx yarn test
+        run: npx yarn test
   release:
     name: Release
     runs-on: ubuntu-18.04
