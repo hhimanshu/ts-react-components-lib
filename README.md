@@ -17,7 +17,7 @@ This library is published on `npm` and demonstrates how to write your own React 
 -[x] Integrated Continuous Deployment (CD) to using [Github Actions](https://github.com/hhimanshu/ts-react-components-lib/actions/workflows/release.yml)
 -[x] Uses [Semantic Release](https://semantic-release.gitbook.io/semantic-release/) for releasing the library
 -[x] Publishes to [npm](https://www.npmjs.com/package/@h2_demo/p2)
--[ ] Publishes Storybook to Chromatic
+-[x] Publishes Storybook to Chromatic
 
 
 
