@@ -7,17 +7,17 @@ This library is published on `npm` and demonstrates how to write your own React 
 
 ## Features  
 
--[x] React components written in TypeScript
--[x] Leverages [TSDX](https://tsdx.io/) to create library
--[x] Use of [`styled-components`](https://styled-components.com/) for styling
--[x] Connected with [Storybook](https://storybook.js.org/)
--[x] Integrated tests with [Jest](https://jestjs.io/) and [Testing Library](https://testing-library.com/)
--[x] Linting support using [Prettier](https://prettier.io/)
--[x] Integrated Continuous Integration (CI) using [GitHub Actions](https://github.com/hhimanshu/ts-react-components-lib/actions/workflows/main.yml)
--[x] Integrated Continuous Deployment (CD) to using [Github Actions](https://github.com/hhimanshu/ts-react-components-lib/actions/workflows/release.yml)
--[x] Uses [Semantic Release](https://semantic-release.gitbook.io/semantic-release/) for releasing the library
--[x] Publishes to [npm](https://www.npmjs.com/package/@h2_demo/p2)
--[x] Publishes Storybook to Chromatic
+- [x] React components written in TypeScript
+- [x] Leverages [TSDX](https://tsdx.io/) to create library
+- [x] Use of [`styled-components`](https://styled-components.com/) for styling
+- [x] Connected with [Storybook](https://storybook.js.org/)
+- [x] Integrated tests with [Jest](https://jestjs.io/) and [Testing Library](https://testing-library.com/)
+- [x] Linting support using [Prettier](https://prettier.io/)
+- [x] Integrated Continuous Integration (CI) using [GitHub Actions](https://github.com/hhimanshu/ts-react-components-lib/actions/workflows/main.yml)
+- [x] Integrated Continuous Deployment (CD) to using [Github Actions](https://github.com/hhimanshu/ts-react-components-lib/actions/workflows/release.yml)
+- [x] Uses [Semantic Release](https://semantic-release.gitbook.io/semantic-release/) for releasing the library
+- [x] Publishes to [npm](https://www.npmjs.com/package/@h2_demo/p2)
+- [x] Publishes Storybook to Chromatic
 
 
 
