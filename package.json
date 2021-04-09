@@ -21,7 +21,6 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "semantic-release": "semantic-release",
-    "chromatic": "npx chromatic --project-token 50f1422ec540"
   },
   "peerDependencies": {
     "react": ">=16",
