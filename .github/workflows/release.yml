@@ -18,6 +18,8 @@ jobs:
         run: npx yarn install
       - name: Test
         run: npx yarn test
+      - name: Build Artifacts
+        run: npx yarn build
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
