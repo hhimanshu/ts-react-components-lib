@@ -9,17 +9,22 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
+
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 12
-      - name: Install dependencies
-        run: npx yarn install
+          node-version: 10
+
+      - name: Install deps and build (with cache)
+        uses: bahmutov/npm-install@v1
+
       - name: Test
-        run: npx yarn test
+        run: yarn test --ci --coverage --maxWorkers=2
+
       - name: Build Artifacts
-        run: npx yarn build
+        run: yarn build
+
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
