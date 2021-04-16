@@ -1,8 +1,11 @@
 {
   "version": "0.0.0-development",
+  "name": "@hhimanshu/ts-react-components-lib",
+  "author": "hhimanshu",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "module": "dist/p2.esm.js",
   "files": [
     "dist"
   ],
@@ -36,9 +39,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@h2_demo/p2",
-  "author": "hhimanshu",
-  "module": "dist/p2.esm.js",
   "size-limit": [
     {
       "path": "dist/p2.cjs.production.min.js",
@@ -89,5 +89,8 @@
     "branches": [
       "master"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

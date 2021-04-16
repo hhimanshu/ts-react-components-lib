@@ -20,4 +20,11 @@ This library is published on `npm` and demonstrates how to write your own React 
 - [x] Publishes Storybook to Chromatic
 
 
-
+## Commands
+- `yarn start` to start developing your components  
+- `yarn test` to test your components  
+- `yarn lint` to lint your code  
+- `yarn prepare` to create the production bundle  
+- `yarn storybook` to start `storybook` in development mode (starts as a new process)  
+- `yarn build-storybook` to create production version of storybook for the project. This can be deployment to platforms such as Vercel, Gatsby, Surge, or Firebase hosting  
+- `yarn size` tells you size of your library when production bundle is created
