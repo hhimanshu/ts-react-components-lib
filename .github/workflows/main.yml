@@ -35,8 +35,8 @@ jobs:
         run: yarn build
 
       - name: Uninstall Yarn
-          if: always()
-          run: npm uninstall -g yarn
+        if: always()
+        run: npm uninstall -g yarn
   publish:
     needs: build
     name: 'Publish Storybook to Chromatic'
