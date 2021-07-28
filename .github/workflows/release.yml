@@ -35,5 +35,5 @@ jobs:
         run: npx semantic-release
 
       - name: Uninstall Yarn
-          if: always()
-          run: npm uninstall -g yarn
+        if: always()
+        run: npm uninstall -g yarn
