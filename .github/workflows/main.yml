@@ -7,12 +7,15 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: ['10.x', '12.x', '14.x']
+        node: ['12.x', '14.x']
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
+
+      - name: Install Yarn
+        run: npm install -g yarn
 
       - name: Use Node ${{ matrix.node }}
         uses: actions/setup-node@v1
@@ -30,6 +33,10 @@ jobs:
 
       - name: Build
         run: yarn build
+
+      - name: Uninstall Yarn
+        if: always()
+        run: npm uninstall -g yarn
   publish:
     needs: build
     name: 'Publish Storybook to Chromatic'

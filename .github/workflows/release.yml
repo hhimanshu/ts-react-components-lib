@@ -11,6 +11,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Install Yarn
+        run: npm install -g yarn
+
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
@@ -30,3 +33,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
+
+      - name: Uninstall Yarn
+          if: always()
+          run: npm uninstall -g yarn
